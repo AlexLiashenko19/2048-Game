@@ -1,5 +1,5 @@
-import { onTouchStart, onTouchEnd } from './swipeHandler';
-import { gameField, updateField, isChanged } from './updateField';
+const { onTouchStart, onTouchEnd } = require('./swipeHandler');
+const { gameField, updateField, isChanged } = require('./updateField');
 
 const Game = require('../modules/Game.class');
 const game = new Game();

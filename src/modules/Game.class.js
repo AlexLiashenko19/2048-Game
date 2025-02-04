@@ -6,6 +6,19 @@
  * Feel free to add more props and methods if needed.
  */
 class Game {
+  // constructor(initialState = this.createField()) {
+  //   this.size = 4;
+  //   this.probability = 10;
+
+  //   this.status = {
+  //     started: false,
+  //     lost: false,
+  //     won: false,
+  //   };
+  //   this.score = 0;
+  //   this.state = initialState;
+  //   this.initialState = this.copyState(initialState);
+  // }
   size = 4;
   probability = 10;
 
@@ -34,7 +47,7 @@ class Game {
   constructor(initialState = this.createField()) {
     this.state = initialState;
     this.initialState = this.copyState(initialState);
-  }
+  };
 
   /**
    * Starts the game.

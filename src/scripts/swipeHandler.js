@@ -1,7 +1,7 @@
 let startX, startY, endX, endY;
 const minDistance = 15;
 
-export function onTouchStart(e) {
+function onTouchStart(e) {
   e.preventDefault();
 
   const touch = e.touches[0];
@@ -10,7 +10,7 @@ export function onTouchStart(e) {
   startY = touch.pageY;
 }
 
-export function onTouchEnd(e) {
+function onTouchEnd(e) {
   const touch = e.changedTouches[0];
 
   endX = touch.pageX;
@@ -45,3 +45,7 @@ export function onTouchEnd(e) {
     return e;
   }
 }
+
+module.exports = {
+  onTouchStart, onTouchEnd,
+};

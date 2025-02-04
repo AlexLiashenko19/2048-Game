@@ -13,7 +13,7 @@ let lastTimeout = null;
 const ANIMATION_DURATION = 250;
 // const ANIMATION_DURATION = 5000;
 
-export function updateField(state, direction) {
+function updateField(state, direction) {
   if (lastChange) {
     if (!isChanged(lastChange, state)) {
       return;
@@ -61,7 +61,7 @@ export function updateField(state, direction) {
   fillField(state);
 }
 
-export function isChanged(prevState, state) {
+function isChanged(prevState, state) {
   for (let i = 0; i < prevState.length; i++) {
     for (let j = 0; j < prevState[i].length; j++) {
       if (prevState[i][j] !== state[i][j]) {
@@ -277,3 +277,8 @@ function clearField() {
 
   return state;
 }
+
+module.exports = {
+  updateField,
+  isChanged,
+};
