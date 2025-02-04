@@ -14,3 +14,6 @@ HTML: Used to create the structure and layout of the game interface. HTML elemen
 SCSS: is a CSS preprocessor that was used to style the game. SCSS allows for variables, nested rules, and mixins, making creating and maintaining styles easy. The game design includes attractive colors, animations, and a responsive interface.
 
 JavaScript: The main programming language used to implement the game logic. JavaScript handles the movement of tiles, combining values, generating new tiles, and handling user input. The code is written using pure JavaScript, which ensures high performance and ease of understanding.
+
+https://alexliashenko19.github.io/2048-Game/
+
